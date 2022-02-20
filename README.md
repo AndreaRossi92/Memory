@@ -13,3 +13,5 @@ Il file classifica.sql contiene lo script per la generazione del database relati
 
 Per l'esecuzione importare su Netbeans i file Memory.zip e ServerLog.zip.
 Eseguire prima ServerLog e poi Memory.
+
+Nella sottocartella "src" all'interno delle cartelle "Memory" e "ServerLog" sono presenti i file java contenenti il codice sviluppato
