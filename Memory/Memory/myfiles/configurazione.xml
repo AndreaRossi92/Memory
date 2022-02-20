@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParametriIniziali>
+  <gioco>
+    <numCoppie>6</numCoppie>
+    <tempoCopertura unita = "secondi">3</tempoCopertura>
+    <puntiStandard>10</puntiStandard>
+    <puntiBonusSerie>5</puntiBonusSerie>
+    <puntiPenalitaSuggerimento>5</puntiPenalitaSuggerimento>
+    <puntiBonusTempo>500</puntiBonusTempo>
+  </gioco>
+  <stile>
+    <NRigheClassifica>5</NRigheClassifica>
+    <fontTitolo>Times New Roman</fontTitolo>
+    <fontCaselle>Times New Roman</fontCaselle>
+    <fontClassificaENome>Times New Roman</fontClassificaENome>
+    <fontAltro>Times New Roman</fontAltro>
+    <dimensioneTitolo unita = "pt">24</dimensioneTitolo>
+    <dimensioneCaselle unita ="pt">12</dimensioneCaselle>
+    <dimensioneClassificaENome unita ="pt">14</dimensioneClassificaENome>
+    <dimensioneAltro unita = "pt">12</dimensioneAltro>
+    <coloreCaselle formato = "rgb">#66b3ff</coloreCaselle>
+	<coloreSfondo formato = "rgb">#666666</coloreSfondo>
+  </stile>
+  <tecnologici>
+    <IpClient>localhost</IpClient>
+    <IpServerLog>localhost</IpServerLog>
+    <portaServerLog>8080</portaServerLog>
+    <IpDBMS>localhost</IpDBMS>
+    <portaDBMS>3306</portaDBMS>
+    <passwordDBMS></passwordDBMS>
+  </tecnologici>
+</ParametriIniziali>
+
