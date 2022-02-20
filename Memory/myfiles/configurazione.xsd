@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ParametriIniziali">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="gioco">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="numCoppie" type="xs:int"/>
+						<xs:element name="tempoCopertura">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:int">
+										<xs:attribute name="unita" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="puntiStandard" type="xs:int"/>
+						<xs:element name="puntiBonusSerie" type="xs:int"/>
+						<xs:element name="puntiPenalitaSuggerimento" type="xs:int"/>
+						<xs:element name="puntiBonusTempo" type="xs:int"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="stile">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="NRigheClassifica" type="xs:int"/>
+						<xs:element name="fontTitolo" type="xs:string"/>
+						<xs:element name="fontCaselle" type="xs:string"/>
+						<xs:element name="fontClassificaENome" type="xs:string"/>
+						<xs:element name="fontAltro" type="xs:string"/>
+						<xs:element name="dimensioneTitolo">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:int">
+										<xs:attribute name="unita" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="dimensioneCaselle">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:int">
+										<xs:attribute name="unita" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="dimensioneClassificaENome">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:int">
+										<xs:attribute name="unita" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="dimensioneAltro">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:int">
+										<xs:attribute name="unita" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="coloreCaselle">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="formato" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="coloreSfondo">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="formato" type="xs:string" use="required"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="tecnologici">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="IpClient" type="xs:string"/>
+						<xs:element name="IpServerLog" type="xs:string"/>
+						<xs:element name="portaServerLog" type="xs:int"/>
+						<xs:element name="IpDBMS" type="xs:string"/>
+						<xs:element name="portaDBMS" type="xs:int"/>
+						<xs:element name="passwordDBMS" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
